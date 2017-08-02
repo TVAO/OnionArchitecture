@@ -1,0 +1,21 @@
+﻿
+@model OnionArchitecture.Web.ViewModels.UserViewModel
+
+<div>
+    <h2>First user from database: @Model.Name</h2>
+</div>
+
+<div>
+    <form asp-controller="App" asp-action="Create" method="post">
+        Name: <input asp-for="Name"/> <br/>
+        <button type="submit" class="btn btn-lg btn-success">Create</button>
+    </form>
+</div>
+
+@*<div>
+    <p>
+        <a asp-action="Create" asp-route-id="TEST">Create New</a>
+        <a asp-controller="App" asp-action="Create"></a>
+    </p>
+</div>*@
+
